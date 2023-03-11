@@ -38,10 +38,12 @@ const AddressForm = ({ checkoutToken, test }) => {
 
   useEffect(() => {
     fetchShippingCountries(checkoutToken.id);
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
     if (shippingCountry) fetchSubdivisions(shippingCountry);
+    // eslint-disable-next-line
   }, [shippingCountry]);
 
   useEffect(() => {
